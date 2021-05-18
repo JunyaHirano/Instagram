@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,6 +19,10 @@
 		C99BAB142646F59100E71C56 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99BAB132646F59100E71C56 /* PostViewController.swift */; };
 		C99BAB172646F5B000E71C56 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99BAB162646F5B000E71C56 /* SettingViewController.swift */; };
 		C99BAB1B2646FC7D00E71C56 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99BAB1A2646FC7D00E71C56 /* TabBarController.swift */; };
+		C9DDD5B8264A191B00292C6B /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DDD5B7264A191B00292C6B /* Const.swift */; };
+		C9DDD5BE264A21B100292C6B /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DDD5BD264A21B100292C6B /* PostData.swift */; };
+		C9DDD5C2264A235A00292C6B /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DDD5C0264A235A00292C6B /* PostTableViewCell.swift */; };
+		C9DDD5C3264A235A00292C6B /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9DDD5C1264A235A00292C6B /* PostTableViewCell.xib */; };
 		C9F1883D2647A1A400CF3500 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C9F1883C2647A1A400CF3500 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +41,10 @@
 		C99BAB132646F59100E71C56 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		C99BAB162646F5B000E71C56 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		C99BAB1A2646FC7D00E71C56 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		C9DDD5B7264A191B00292C6B /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		C9DDD5BD264A21B100292C6B /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
+		C9DDD5C0264A235A00292C6B /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		C9DDD5C1264A235A00292C6B /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
 		C9F1883C2647A1A400CF3500 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F6ACA715929565913E61C515 /* Pods-Instagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram.release.xcconfig"; path = "Target Support Files/Pods-Instagram/Pods-Instagram.release.xcconfig"; sourceTree = "<group>"; };
 		F9A4B195ABD60A4383767400 /* Pods_Instagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,7 +68,6 @@
 				BCD2EF597119E6C90704F044 /* Pods-Instagram.debug.xcconfig */,
 				F6ACA715929565913E61C515 /* Pods-Instagram.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -100,6 +107,10 @@
 				C99BAB0D2646F54600E71C56 /* HomeViewController.swift */,
 				C99BAB102646F57400E71C56 /* ImageSelectViewController.swift */,
 				C99BAB132646F59100E71C56 /* PostViewController.swift */,
+				C9DDD5BD264A21B100292C6B /* PostData.swift */,
+				C9DDD5B7264A191B00292C6B /* Const.swift */,
+				C9DDD5C0264A235A00292C6B /* PostTableViewCell.swift */,
+				C9DDD5C1264A235A00292C6B /* PostTableViewCell.xib */,
 				C99BAB1A2646FC7D00E71C56 /* TabBarController.swift */,
 				C99BAAE62646F2CC00E71C56 /* Main.storyboard */,
 				C99BAAE92646F2D100E71C56 /* Assets.xcassets */,
@@ -170,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C99BAAED2646F2D100E71C56 /* LaunchScreen.storyboard in Resources */,
+				C9DDD5C3264A235A00292C6B /* PostTableViewCell.xib in Resources */,
 				C9F1883D2647A1A400CF3500 /* GoogleService-Info.plist in Resources */,
 				C99BAAEA2646F2D100E71C56 /* Assets.xcassets in Resources */,
 				C99BAAE82646F2CC00E71C56 /* Main.storyboard in Resources */,
@@ -225,14 +237,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9DDD5C2264A235A00292C6B /* PostTableViewCell.swift in Sources */,
 				C99BAB142646F59100E71C56 /* PostViewController.swift in Sources */,
 				C99BAB1B2646FC7D00E71C56 /* TabBarController.swift in Sources */,
 				C99BAB0E2646F54600E71C56 /* HomeViewController.swift in Sources */,
 				C99BAB172646F5B000E71C56 /* SettingViewController.swift in Sources */,
 				C99BAB112646F57400E71C56 /* ImageSelectViewController.swift in Sources */,
+				C9DDD5BE264A21B100292C6B /* PostData.swift in Sources */,
 				C99BAB0B2646F4FD00E71C56 /* LoginViewController.swift in Sources */,
 				C99BAAE12646F2CC00E71C56 /* AppDelegate.swift in Sources */,
 				C99BAAE32646F2CC00E71C56 /* SceneDelegate.swift in Sources */,
+				C9DDD5B8264A191B00292C6B /* Const.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
