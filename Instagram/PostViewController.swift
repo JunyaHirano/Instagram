@@ -39,7 +39,6 @@ class PostViewController: UIViewController {
                 UIApplication.shared.windows.first{ $0.isKeyWindow }?.rootViewController?.dismiss(animated: true, completion: nil)
                 return
             }
-        }
         // FIreStoreに投稿データを保存する
         let name = Auth.auth().currentUser?.displayName
         let postDic = [
@@ -53,7 +52,8 @@ class PostViewController: UIViewController {
         SVProgressHUD.showSuccess(withStatus: "投稿しました")
         //投稿処理が完了したので先頭に戻る
         UIApplication.shared.windows.first{ $0.isKeyWindow }?.rootViewController?.dismiss(animated: true, completion: nil)
-        
+            
+        }
     }
     
     //キャンセルボタンをタップしたときに呼ばれるメソッド
@@ -70,15 +70,5 @@ class PostViewController: UIViewController {
         imageView.image = image
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
