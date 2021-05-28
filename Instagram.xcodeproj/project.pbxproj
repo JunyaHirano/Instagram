@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C3C0165798966BA7DBD83809 /* Pods_Instagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9A4B195ABD60A4383767400 /* Pods_Instagram.framework */; };
+		C97F36E6265D02A100059257 /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97F36E5265D02A100059257 /* CommentViewController.swift */; };
 		C99BAAE12646F2CC00E71C56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99BAAE02646F2CC00E71C56 /* AppDelegate.swift */; };
 		C99BAAE32646F2CC00E71C56 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99BAAE22646F2CC00E71C56 /* SceneDelegate.swift */; };
 		C99BAAE82646F2CC00E71C56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C99BAAE62646F2CC00E71C56 /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		BCD2EF597119E6C90704F044 /* Pods-Instagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram.debug.xcconfig"; path = "Target Support Files/Pods-Instagram/Pods-Instagram.debug.xcconfig"; sourceTree = "<group>"; };
+		C97F36E5265D02A100059257 /* CommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
 		C99BAADD2646F2CC00E71C56 /* Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C99BAAE02646F2CC00E71C56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C99BAAE22646F2CC00E71C56 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				C9DDD5B7264A191B00292C6B /* Const.swift */,
 				C9DDD5C0264A235A00292C6B /* PostTableViewCell.swift */,
 				C9DDD5C1264A235A00292C6B /* PostTableViewCell.xib */,
+				C97F36E5265D02A100059257 /* CommentViewController.swift */,
 				C99BAB1A2646FC7D00E71C56 /* TabBarController.swift */,
 				C99BAAE62646F2CC00E71C56 /* Main.storyboard */,
 				C99BAAE92646F2D100E71C56 /* Assets.xcassets */,
@@ -245,6 +248,7 @@
 				C99BAB112646F57400E71C56 /* ImageSelectViewController.swift in Sources */,
 				C9DDD5BE264A21B100292C6B /* PostData.swift in Sources */,
 				C99BAB0B2646F4FD00E71C56 /* LoginViewController.swift in Sources */,
+				C97F36E6265D02A100059257 /* CommentViewController.swift in Sources */,
 				C99BAAE12646F2CC00E71C56 /* AppDelegate.swift in Sources */,
 				C99BAAE32646F2CC00E71C56 /* SceneDelegate.swift in Sources */,
 				C9DDD5B8264A191B00292C6B /* Const.swift in Sources */,

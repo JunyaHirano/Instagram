@@ -15,6 +15,12 @@ class PostTableViewCell: UITableViewCell {
     @IBOutlet weak var likeLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var captionLabel: UILabel!
+    
+    //コメント追加 homeviewコントローラーで追加するためactionでなくoutlet
+    @IBOutlet weak var commentButton: UIButton!
+    //コメント表示ラベル追加
+    @IBOutlet weak var commentLabel: UILabel!
+    
 
     override func awakeFromNib() {
         super.awakeFromNib()
