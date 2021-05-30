@@ -69,22 +69,35 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! PostTableViewCell
         cell.setPostData(postArray[indexPath.row])
         
-        //セル内のボタンのアクションをソースコードで設定する
+        //セル内のボタンのいいねアクションをソースコードで設定する
         cell.likeButton.addTarget(self, action:#selector(handleButton(_:forEvent:)), for: .touchUpInside)
         
         //セル内のコメントのアクションをソースコードで設定する
         cell.commentButton.addTarget(self, action:#selector(handleComment(_:forEvent:)), for: .touchUpInside)
-       
+        
         return cell
     }
     
     //セル内の「コメントする」がタップされた時に呼ばれるメソッド
     @objc func handleComment(_ sender: UIButton, forEvent event: UIEvent){
-            let CommentViewController = self.storyboard?.instantiateViewController(withIdentifier: "Comment")
-            self.present(CommentViewController!, animated: true, completion: nil)
+        //配列からタップされたインデックスのデータを取り出す
+        let touch = event.allTouches?.first
+        let point = touch!.location(in: self.tableView)
+        let indexPath = tableView.indexPathForRow(at: point)
+        
+        let postData = postArray[indexPath!.row]
+        print("\(indexPath!.row) 番目の行が選択された。")
+        
+        //コメントビューコントローラーをpresentメソッドで開く
+        let CommentViewController = self.storyboard?.instantiateViewController(withIdentifier: "Comment")
+        self.present(CommentViewController!, animated: true, completion: nil)
+        
+        //postDataをCommentViewController側の変数postDataReceivedに渡す
+        let next = self.storyboard?.instantiateViewController(withIdentifier: "Comment") as! CommentViewController
+        next.postDataReceived =  postData
+        
     }
     
-
     
     //セル内のボタンがタップされた時に呼ばれるメソッド
     @objc func handleButton(_ sender: UIButton, forEvent event: UIEvent) {

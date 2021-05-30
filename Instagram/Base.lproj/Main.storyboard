@@ -262,10 +262,9 @@
                                     <action selector="handleCancelBUtton:" destination="kTB-9G-iXB" eventType="touchUpInside" id="Yip-EY-gPF"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="テスト用ラベル" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2jl-QJ-aOm">
-                                <rect key="frame" x="235" y="583" width="122" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="テストで置いてみたラベル" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C3W-A3-Igc">
+                                <rect key="frame" x="65" y="562" width="208" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="placeholderTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -286,9 +285,9 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="commentTest" destination="2jl-QJ-aOm" id="BDo-OS-jAb"/>
+                        <outlet property="commentImageView" destination="7tO-Vc-Ros" id="0o8-F0-sRj"/>
+                        <outlet property="commentLabel" destination="C3W-A3-Igc" id="UMS-8A-h4T"/>
                         <outlet property="commentView" destination="rmZ-d0-qj7" id="AQQ-Fv-h6M"/>
-                        <outlet property="imageView" destination="7tO-Vc-Ros" id="WAg-Cv-4no"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9c4-sQ-RHV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -401,9 +400,6 @@
         <image name="setting" width="25" height="25"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="placeholderTextColor">
-            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

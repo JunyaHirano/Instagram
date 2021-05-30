@@ -39,7 +39,7 @@ class PostViewController: UIViewController {
                 UIApplication.shared.windows.first{ $0.isKeyWindow }?.rootViewController?.dismiss(animated: true, completion: nil)
                 return
             }
-        // FIreStoreに投稿データを保存する
+        // FireStoreに投稿データを保存する
         let name = Auth.auth().currentUser?.displayName
         let postDic = [
             "name": name!,
