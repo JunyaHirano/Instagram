@@ -80,21 +80,22 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     //セル内の「コメントする」がタップされた時に呼ばれるメソッド
     @objc func handleComment(_ sender: UIButton, forEvent event: UIEvent){
-        //配列からタップされたインデックスのデータを取り出す
+        
+        //タップされたセルのインデックスを求める
         let touch = event.allTouches?.first
         let point = touch!.location(in: self.tableView)
         let indexPath = tableView.indexPathForRow(at: point)
         
+        //配列からタップされたインデックスのデータを取り出す
         let postData = postArray[indexPath!.row]
         print("\(indexPath!.row) 番目の行が選択された。")
         
-        //コメントビューコントローラーをpresentメソッドで開く
-        let CommentViewController = self.storyboard?.instantiateViewController(withIdentifier: "Comment")
-        self.present(CommentViewController!, animated: true, completion: nil)
-        
+        //コメントビューコントローラーをpresentメソッドで開く&postDataを渡すための定数
+        let CommentViewController = self.storyboard?.instantiateViewController(withIdentifier: "Comment")as! CommentViewController
+        //presentメソッドで開く
+        self.present(CommentViewController, animated: true, completion: nil)
         //postDataをCommentViewController側の変数postDataReceivedに渡す
-        let next = self.storyboard?.instantiateViewController(withIdentifier: "Comment") as! CommentViewController
-        next.postDataReceived =  postData
+        CommentViewController.postDataReceived =  postData
         
     }
     

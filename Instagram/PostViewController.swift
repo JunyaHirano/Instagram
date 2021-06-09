@@ -44,7 +44,7 @@ class PostViewController: UIViewController {
         let postDic = [
             "name": name!,
             "caption" : self.textField.text!,
-            "date" : FieldValue.serverTimestamp(),
+            "date" : FieldValue.serverTimestamp()
         ] as [String : Any]
         postRef.setData(postDic)
         

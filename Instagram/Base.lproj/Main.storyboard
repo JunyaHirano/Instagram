@@ -238,7 +238,7 @@
                                 </constraints>
                                 <state key="normal" title="コメントする" backgroundImage="btn"/>
                                 <connections>
-                                    <action selector="handleCommentButton:" destination="kTB-9G-iXB" eventType="touchUpInside" id="2RB-Bb-wAt"/>
+                                    <action selector="handleCommentButton:" destination="kTB-9G-iXB" eventType="touchUpInside" id="Ne0-JE-sNW"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="コメントを入力してください。" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="rmZ-d0-qj7">
@@ -262,13 +262,6 @@
                                     <action selector="handleCancelBUtton:" destination="kTB-9G-iXB" eventType="touchUpInside" id="Yip-EY-gPF"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="テストで置いてみたラベル" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C3W-A3-Igc">
-                                <rect key="frame" x="65" y="562" width="208" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="SYl-pb-l5B"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -285,9 +278,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="commentImageView" destination="7tO-Vc-Ros" id="0o8-F0-sRj"/>
-                        <outlet property="commentLabel" destination="C3W-A3-Igc" id="UMS-8A-h4T"/>
-                        <outlet property="commentView" destination="rmZ-d0-qj7" id="AQQ-Fv-h6M"/>
+                        <outlet property="commentImageView" destination="7tO-Vc-Ros" id="viK-Qd-uYn"/>
+                        <outlet property="commentTextView" destination="rmZ-d0-qj7" id="1Rp-Pr-uYL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9c4-sQ-RHV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

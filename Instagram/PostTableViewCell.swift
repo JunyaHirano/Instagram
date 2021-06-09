@@ -15,8 +15,7 @@ class PostTableViewCell: UITableViewCell {
     @IBOutlet weak var likeLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var captionLabel: UILabel!
-    
-    //コメント追加 homeviewコントローラーで追加するためactionでなくoutlet
+    //コメントするボタン 追加 homeviewコントローラーで追加するためactionでなくoutlet
     @IBOutlet weak var commentButton: UIButton!
     //コメント表示ラベル追加
     @IBOutlet weak var commentLabel: UILabel!
@@ -42,6 +41,17 @@ class PostTableViewCell: UITableViewCell {
         
         //キャプションの表示
         self.captionLabel.text = "\(postData.name!) : \(postData.caption!)"
+        
+//       // forで配列をcommentAllに代入しようとしたがエラーになり、やりかたがワカラナカイのでjoinedを使うことにした ⭐課題
+//        var commentAll: String?
+//        for value in postData.comment {
+//            commentAll! += value
+//        }
+//        //コメントの表示
+//        self.commentLabel.text = commentAll
+        
+        // 配列の値をjoinedで結合してコメントを追加 ⭐課題
+        self.commentLabel.text =  postData.comment.joined(separator: "\n\n")
         
         //日時の表示
         self.dateLabel.text = ""
